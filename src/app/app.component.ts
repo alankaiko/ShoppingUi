@@ -5,6 +5,7 @@ import { PrimeNGConfig } from 'primeng/api';
     templateUrl: './app.component.html'
 })
 export class AppComponent {
+
     menuMode = 'static';
 
     constructor(private primengConfig: PrimeNGConfig) { }
