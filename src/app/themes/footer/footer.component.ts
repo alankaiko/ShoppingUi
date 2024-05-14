@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {LayoutComponent} from "../layout/layout.component";
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+    selector: 'app-footer',
+    templateUrl: './footer.component.html'
 })
 export class FooterComponent {
-
+    constructor(public appMain: LayoutComponent) {
+    }
 }

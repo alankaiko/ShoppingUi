@@ -1,16 +1,16 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
-import { Subscription } from 'rxjs';
-import { AppConfig } from '../api/appconfig';
-import { AppComponent } from '../app.component';
-import { AppMainComponent } from './app.main.component';
-import { ConfigService } from '../service/app.config.service';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {PrimeNGConfig} from 'primeng/api';
+import {Subscription} from 'rxjs';
+import {AppConfig} from '../../api/appconfig';
+import {AppComponent} from '../../app.component';
+import {ConfigService} from '../../service/app.config.service';
+import {LayoutComponent} from "../layout/layout.component";
 
 @Component({
     selector: 'app-config',
-    templateUrl: './app.config.component.html'
+    templateUrl: './config.component.html'
 })
-export class AppConfigComponent implements OnInit, OnDestroy {
+export class ConfigComponent implements OnInit, OnDestroy {
 
     scale: number = 14;
 
@@ -20,7 +20,8 @@ export class AppConfigComponent implements OnInit, OnDestroy {
 
     subscription: Subscription;
 
-    constructor(public app: AppComponent, public appMain: AppMainComponent, public configService: ConfigService, public primengConfig: PrimeNGConfig) { }
+    constructor(public app: AppComponent, public appMain: LayoutComponent, public configService: ConfigService, public primengConfig: PrimeNGConfig) {
+    }
 
     ngOnInit() {
         this.config = this.configService.config;
@@ -61,7 +62,7 @@ export class AppConfigComponent implements OnInit, OnDestroy {
         this.configService.updateConfig(this.config);
     }
 
-    changeTheme(theme:string, dark:boolean){
+    changeTheme(theme: string, dark: boolean) {
         let themeElement = document.getElementById('theme-css');
         themeElement.setAttribute('href', 'assets/theme/' + theme + '/theme.css');
         this.configService.updateConfig({...this.config, ...{theme, dark}});

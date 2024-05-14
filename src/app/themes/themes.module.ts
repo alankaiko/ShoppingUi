@@ -91,16 +91,25 @@ import {TreeTableModule} from "primeng/treetable";
 import {VirtualScrollerModule} from "primeng/virtualscroller";
 import {AppCodeModule} from "../components/app-code/app.code.component";
 import {StyleClassModule} from "primeng/styleclass";
+import {MenuSideitemComponent} from "./menu-side/menu-sideitem.component";
+import {ConfigComponent} from './config/config.component';
 
 @NgModule({
     declarations: [
         LayoutComponent,
         MenuTopComponent,
         FooterComponent,
-        MenuSideComponent
+        MenuSideComponent,
+        MenuSideitemComponent,
+        ConfigComponent
     ],
     exports: [
-        LayoutComponent
+        LayoutComponent,
+        MenuTopComponent,
+        FooterComponent,
+        MenuSideComponent,
+        MenuSideitemComponent,
+        ConfigComponent
     ],
     imports: [
         CommonModule,
