@@ -11,7 +11,7 @@ import { EmptyComponent } from './components/empty/empty.component';
 import { ChartsComponent } from './components/charts/charts.component';
 import { FileComponent } from './components/file/file.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
-import { AppMainComponent } from './app.main.component';
+import { AppMainComponent } from './themes/app.main.component';
 import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
 import { TableComponent } from './components/table/table.component';

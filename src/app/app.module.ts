@@ -88,15 +88,15 @@ import { TreeSelectModule } from 'primeng/treeselect';
 import { TreeTableModule } from 'primeng/treetable';
 import { VirtualScrollerModule } from 'primeng/virtualscroller';
 import { BlockViewer } from './components/blockviewer/blockviewer.component';
- 
+
 import { AppCodeModule } from './components/app-code/app.code.component';
 import { AppComponent } from './app.component';
-import { AppMainComponent } from './app.main.component';
-import { AppTopBarComponent } from './app.topbar.component';
-import { AppFooterComponent } from './app.footer.component';
-import { AppConfigComponent } from './app.config.component';
-import { AppMenuComponent } from './app.menu.component';
-import { AppMenuitemComponent } from './app.menuitem.component';
+import { AppMainComponent } from './themes/app.main.component';
+import { AppTopBarComponent } from './themes/app.topbar.component';
+import { AppFooterComponent } from './themes/app.footer.component';
+import { AppConfigComponent } from './themes/app.config.component';
+import { AppMenuComponent } from './themes/app.menu.component';
+import { AppMenuitemComponent } from './themes/app.menuitem.component';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FormLayoutComponent } from './components/formlayout/formlayout.component';
