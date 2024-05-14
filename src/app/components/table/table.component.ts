@@ -1,10 +1,11 @@
 import { Component, OnInit, ViewChild, ChangeDetectorRef, ElementRef } from '@angular/core';
-import { Customer, Representative } from '../../api/customer';
 import { CustomerService } from '../../service/customerservice';
-import { Product } from '../../api/product';
+import { Product } from '../../themes/api/product';
 import { ProductService } from '../../service/productservice';
 import { Table } from 'primeng/table';
 import { MessageService, ConfirmationService } from 'primeng/api'
+import {Customer} from "../../themes/api/customer";
+import {Representative} from "../../themes/api/representative";
 
 @Component({
     templateUrl: './table.component.html',

@@ -1,12 +1,5 @@
-export interface Country {
-    name?: string;
-    code?: string;
-}
-
-export interface Representative {
-    name?: string;
-    image?: string;
-}
+import {Country} from "./country";
+import {Representative} from "./representative";
 
 export interface Customer {
     id?: number;

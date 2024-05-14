@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ConfirmationService, MessageService} from 'primeng/api';
-import {Product} from '../../api/product';
+import {Product} from '../../themes/api/product';
 import {ProductService} from '../../service/productservice';
 import {LayoutComponent} from "../../themes/layout/layout.component";
 

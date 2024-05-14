@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { AppConfig } from 'src/app/api/appconfig';
+import { AppConfig } from 'src/app/themes/api/appconfig';
 import { ConfigService } from 'src/app/service/app.config.service';
 
 @Component({
@@ -31,7 +31,7 @@ export class ChartsComponent implements OnInit, OnDestroy {
     config: AppConfig;
 
     subscription: Subscription;
-    
+
     constructor(public configService: ConfigService) { }
 
     ngOnInit() {
