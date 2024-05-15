@@ -1,0 +1,18 @@
+.campo-container-texto {
+  display: flex;
+  width: 100%;
+}
+
+.campo-container-texto > input{
+  width: 100%;
+  padding-left: 5px !important;
+}
+
+label {
+  font-size: 13px;
+}
+
+::ng-deep .p-inputtext {
+  padding: 0 !important;
+  font-size: 13px;
+}

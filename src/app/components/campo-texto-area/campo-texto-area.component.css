@@ -1,0 +1,8 @@
+.campo-container-texto-area {
+  display: inline-grid;
+  width: 100%;
+}
+
+label {
+  font-size: 13px;
+}

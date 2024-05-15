@@ -1,0 +1,24 @@
+<section class="grid faixa-identificacao">
+  <div class="col-2 faixa-titulo">
+    <span class="titulo">
+      {{titulo}}
+    </span>
+  </div>
+
+  <div class="col-10 faixa-botoes">
+    <a *ngIf="addNovo" class="botao" (click)="onNovo.emit()">
+      <img [src]="iconeNovo">
+      <span>Nov{{flexaoGenero}} {{tituloNovo}}</span>
+    </a>
+
+    <a *ngIf="addAgenda" class="botao" (click)="onAgenda.emit()">
+      <img [src]="iconeAgenda">
+      <span>{{tituloAgenda}}</span>
+    </a>
+
+    <a *ngIf="addHome" class="botao" (click)="onHome.emit()">
+      <img [src]="iconeHome">
+      <span>{{tituloHome}}</span>
+    </a>
+  </div>
+</section>

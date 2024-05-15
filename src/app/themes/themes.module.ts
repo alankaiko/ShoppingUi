@@ -89,10 +89,10 @@ import {TreeModule} from "primeng/tree";
 import {TreeSelectModule} from "primeng/treeselect";
 import {TreeTableModule} from "primeng/treetable";
 import {VirtualScrollerModule} from "primeng/virtualscroller";
-import {AppCodeModule} from "../components/app-code/app.code.component";
 import {StyleClassModule} from "primeng/styleclass";
 import {MenuSideitemComponent} from "./menu-side/menu-sideitem.component";
 import {ConfigComponent} from './config/config.component';
+import {AppCodeModule} from "../temp/app-code/app.code.component";
 
 @NgModule({
     declarations: [

@@ -1,0 +1,10 @@
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+  padding: 0;
+  font-size: 13px;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  border-color: unset;
+  color: #1b1e21;
+
+}
